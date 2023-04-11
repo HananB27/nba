@@ -1,1 +1,20 @@
-<p>teams works!</p>
+<div class="container-fluid mt-5">
+    <h3>aaa</h3>
+    <div class="row">
+        <div class="col-lg-3 mb-3" *ngFor="let team of teams">
+            <div class="card">
+                <img [src]="'assets/images/' + team.abbreviation + '.png'" alt="{{team.name}} logo" class="card-img-top">
+                <div class="card-body ">
+                    <h5 class="card-title text-center">{{team.full_name}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Name:</b> {{team.name}}</li> 
+                        <li class="list-group-item"><b>City:</b> {{team.city}}</li>
+                        <li class="list-group-item"><b>Conference:</b> {{team.conference}}</li>
+                        <li class="list-group-item"><b>Division:</b> {{team.division}}</li>
+                        <li class="list-group-item"><b>Abbreviation:</b> {{team.abbreviation}}</li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

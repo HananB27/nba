@@ -8,14 +8,13 @@ import { NbaApiService } from '../Service/nba-api.service';
 })
 export class TeamsComponent {
   teams: any[] = [];
-
   constructor(private nbapiService: NbaApiService) { }
 
   ngOnInit(): void {
     this.nbapiService.getTeams().subscribe(
       (response) => {
         this.teams = response.data;
-        console.log(this.teams);
+        console.log(this.teams)
       }
     );
   }
