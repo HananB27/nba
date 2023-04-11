@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { NbaApiService } from './Service/nba-api.service';
 import { HeaderComponent } from './Shared/header/header.component';
 import { FooterComponent } from './Shared/footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './Shared/footer/footer.component';
     TeamsComponent,
     GamesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

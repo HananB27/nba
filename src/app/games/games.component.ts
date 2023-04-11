@@ -15,7 +15,6 @@ export class GamesComponent {
     this.nbapiService.getGames().subscribe(
       (response) => {
         this.games = response.data;
-        // console.log(this.games);
       }
     );
   }
