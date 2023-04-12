@@ -10,8 +10,8 @@
   <div class="column w-100">
     <div class="col-md-6 d-flex w-100">
       <div class="container-fluid mt-5">
-        <h1 class="text-center text-light">Teams</h1>
-        <div class="row">
+        <h1 class="text-center text-light">TEAMS</h1>
+        <div class="row justify-content-center">
           <div class="col-lg-3 mb-3" *ngFor="let team of teams">
             <div class="card w-100">
               <img [src]="'assets/images/' + team.abbreviation + '.png'" alt="{{team.name}} logo" class="card-img-top">
@@ -23,14 +23,15 @@
               </div>
             </div>
           </div>
+          <a routerLink="teams" class="btn btn-danger btn-lg w-25">MORE TEAMS</a>
         </div>
       </div>
     </div>
 
     <div class="col-md-6 w-100">
       <div class="container-fluid mt-5">
-        <h1 class="text-center text-light">Games</h1>
-        <div class="row flex-row">
+        <h1 class="text-center text-light">GAMES</h1>
+        <div class="row flex-row justify-content-center ">
           <div *ngFor="let game of games" class="col-md-4 mb-3">
             <div class="card p-2 h-100 w-150">
               <div class="d-flex align-items-center justify-content-between">
@@ -46,6 +47,7 @@
               <p class="card-text m-0 text-center"> Date: <b>{{ game.date | date:'shortDate' }} </b></p>
             </div>
           </div>
+          <a routerLink="games" class="btn btn-danger btn-lg w-25 mb-3">MORE GAMES</a>
         </div>
       </div>
     </div>
